@@ -1,10 +1,10 @@
 {
-  "name": "@aurorajs.dev/cli",
+  "name": "@aurorajs.dev/cli1",
   "version": "4.4.2",
-  "description": "Aurora CLI",
+  "description": "Aurora CLI V1",
   "author": "José Carlos Rodríguez Palacín <carlos.rodriguez.palacin@gmail.com>",
   "bin": {
-    "aurora": "./bin/run"
+    "aurora1": "./bin/run"
   },
   "homepage": "https://github.com/avvale/aurora-cli",
   "license": "MIT",
@@ -68,8 +68,8 @@
     "prettier-plugin-tailwindcss": "0.6.9"
   },
   "oclif": {
-    "bin": "aurora",
-    "dirname": "aurora",
+    "bin": "aurora1",
+    "dirname": "aurora1",
     "commands": "./dist/commands",
     "plugins": [
       "@oclif/plugin-help",

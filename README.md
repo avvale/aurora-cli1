@@ -19,7 +19,7 @@ $ npm install -g @aurorajs.dev/cli
 $ aurora COMMAND
 running command...
 $ aurora (--version)
-@aurorajs.dev/cli/4.4.1 darwin-arm64 node-v22.21.1
+@aurorajs.dev/cli/4.4.2 darwin-arm64 node-v22.21.1
 $ aurora --help [COMMAND]
 USAGE
   $ aurora COMMAND
@@ -29,8 +29,8 @@ USAGE
 # Commands
 <!-- commands -->
 * [`aurora add FIRSTARG`](#aurora-add-firstarg)
+* [`aurora ai FIRSTARG`](#aurora-ai-firstarg)
 * [`aurora delete FIRSTARG SECONDARG`](#aurora-delete-firstarg-secondarg)
-* [`aurora generate FIRSTARG SECONDARG`](#aurora-generate-firstarg-secondarg)
 * [`aurora hello PERSON`](#aurora-hello-person)
 * [`aurora hello world`](#aurora-hello-world)
 * [`aurora help [COMMAND]`](#aurora-help-command)
@@ -74,7 +74,35 @@ EXAMPLES
   $ aurora --help
 ```
 
-_See code: [dist/commands/add.ts](https://github.com/avvale/aurora-cli/blob/v4.4.1/dist/commands/add.ts)_
+_See code: [dist/commands/add.ts](https://github.com/avvale/aurora-cli/blob/v4.4.2/dist/commands/add.ts)_
+
+## `aurora ai FIRSTARG`
+
+Generate an agentic system to perform vibe coding
+
+```
+USAGE
+  $ aurora ai FIRSTARG [-h] [-f]
+
+ARGUMENTS
+  FIRSTARG  (back|front) Scope where our command will act.
+
+FLAGS
+  -f, --force  Overwrite existing files.
+  -h, --help   Show CLI help.
+
+DESCRIPTION
+  Generate an agentic system to perform vibe coding
+
+EXAMPLES
+  $ aurora ai back
+
+  $ aurora ai front -f
+
+  $ aurora --help
+```
+
+_See code: [dist/commands/ai.ts](https://github.com/avvale/aurora-cli/blob/v4.4.2/dist/commands/ai.ts)_
 
 ## `aurora delete FIRSTARG SECONDARG`
 
@@ -95,37 +123,7 @@ DESCRIPTION
   Delete elements
 ```
 
-_See code: [dist/commands/delete/index.ts](https://github.com/avvale/aurora-cli/blob/v4.4.1/dist/commands/delete/index.ts)_
-
-## `aurora generate FIRSTARG SECONDARG`
-
-Generate aurora item
-
-```
-USAGE
-  $ aurora generate FIRSTARG SECONDARG -n <value> [-h] [-f] [-g] [-v]
-
-ARGUMENTS
-  FIRSTARG   (back|front) Scope where our command will act.
-  SECONDARG  (api|bounded-context|module) Type of element to generate.
-
-FLAGS
-  -f, --force           Overwrite existing files.
-  -g, --noGraphQLTypes  Avoid generating graphql types.
-  -h, --help            Show CLI help.
-  -n, --name=<value>    (required) Name of element to generate.
-  -v, --verbose         Reports on screen all the steps followed by the command.
-
-DESCRIPTION
-  Generate aurora item
-
-EXAMPLES
-  $ aurora generate back module -n=my-bounded-context/my-module
-
-  $ aurora --help
-```
-
-_See code: [dist/commands/generate.ts](https://github.com/avvale/aurora-cli/blob/v4.4.1/dist/commands/generate.ts)_
+_See code: [dist/commands/delete/index.ts](https://github.com/avvale/aurora-cli/blob/v4.4.2/dist/commands/delete/index.ts)_
 
 ## `aurora hello PERSON`
 
@@ -149,7 +147,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/avvale/aurora-cli/blob/v4.4.1/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/avvale/aurora-cli/blob/v4.4.2/dist/commands/hello/index.ts)_
 
 ## `aurora hello world`
 
@@ -207,7 +205,7 @@ EXAMPLES
   $ aurora --help
 ```
 
-_See code: [dist/commands/keys.ts](https://github.com/avvale/aurora-cli/blob/v4.4.1/dist/commands/keys.ts)_
+_See code: [dist/commands/keys.ts](https://github.com/avvale/aurora-cli/blob/v4.4.2/dist/commands/keys.ts)_
 
 ## `aurora load FIRSTARG SECONDARG`
 
@@ -239,7 +237,7 @@ EXAMPLES
   $ aurora --help
 ```
 
-_See code: [dist/commands/load.ts](https://github.com/avvale/aurora-cli/blob/v4.4.1/dist/commands/load.ts)_
+_See code: [dist/commands/load.ts](https://github.com/avvale/aurora-cli/blob/v4.4.2/dist/commands/load.ts)_
 
 ## `aurora new FIRSTARG SECONDARG`
 
@@ -268,7 +266,7 @@ EXAMPLES
   $ aurora --help
 ```
 
-_See code: [dist/commands/new.ts](https://github.com/avvale/aurora-cli/blob/v4.4.1/dist/commands/new.ts)_
+_See code: [dist/commands/new.ts](https://github.com/avvale/aurora-cli/blob/v4.4.2/dist/commands/new.ts)_
 
 ## `aurora pipeline FIRSTARG`
 
@@ -296,7 +294,7 @@ EXAMPLES
   $ aurora --help
 ```
 
-_See code: [dist/commands/pipeline.ts](https://github.com/avvale/aurora-cli/blob/v4.4.1/dist/commands/pipeline.ts)_
+_See code: [dist/commands/pipeline.ts](https://github.com/avvale/aurora-cli/blob/v4.4.2/dist/commands/pipeline.ts)_
 
 ## `aurora plugins`
 
